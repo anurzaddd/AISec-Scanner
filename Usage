@@ -1,0 +1,8 @@
+# Scan your AI project
+python -m aisec_scanner.scanner /path/to/your/ai/project
+
+# Generate HTML report
+python -m aisec_scanner.scanner /path/to/project -f html -o report.html
+
+# Generate JSON report (for CI/CD)
+python -m aisec_scanner.scanner /path/to/project -f json -o report.json
