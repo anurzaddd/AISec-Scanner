@@ -1,0 +1,17 @@
+Add Your Own Security Rules
+Create a new file in aisec_scanner/rules/:
+
+python
+# my_custom_rule.py
+def check_my_vulnerability(target_path):
+    # Your logic here
+    return [
+        {
+            "type": "Custom Vulnerability",
+            "file": "example.py",
+            "line": 42,
+            "description": "Description of the issue",
+            "remediation": "How to fix it"
+        }
+    ]
+Then import and call it in scanner.py.
